@@ -1,13 +1,32 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//sections jsx
+import Card from "./card.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import NavBar from "./NavBar.jsx";
+import FooterBottom from "./FooterBottom.jsx";
 
 //create your first component
 const Home = () => {
 	return (
+		<div>
+			<NavBar/>
+		<div className="container">
+			<Jumbotron/>
+			<Card/>
+		</div>
+			<FooterBottom/>
+</div>
+	);
+};
+
+export default Home;
+
+//create your first component
+/*const Home = () => {
+	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+			<h1 className="text-center mt-5">Hola es Miguel</h1>
 			<p>
 				<img src={rigoImage} />
 			</p>
@@ -22,5 +41,5 @@ const Home = () => {
 		</div>
 	);
 };
+*/
 
-export default Home;
